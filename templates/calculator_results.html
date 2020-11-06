@@ -5,11 +5,22 @@
     </head>
     <body>
         <!-- Your HTML code goes here! -->
+        {% if operator == 'add' %}
+            <p> add {{number1}} and {{number2}} </p>
+            <p> result is: {{number1 + number2}}</p>
 
+        {% elif operator == 'subtract' %}        
+            <p> subtract {{number1}} and {{number2}} </p>
+            <p> result is: {{number1 - number2}} </p>
 
+        {% elif operator == 'divide' %}
+            <p> divide {{number1}} and {{number2}} </p>
+            <p> result is: {{number1 / number2}} </p>
 
+        {   % elif operator == 'multiply' %}
+            <p> multiply {{number1}} and {{number2}} </p>
+            <p> result is: {{number1 * number2}} </p>
 
-
-        
+        {% endif %}
     </body>
 </html>
